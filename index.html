@@ -1,378 +1,362 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      body {
-        /* background:rgb(173, 216, 230,0.6); */
-        letter-spacing: 1px;
-                background: linear-gradient(315deg, #ffffff, rgb(173, 216, 230,0.4));
 
-      }
-      a{
-          text-decoration: none;
-          color: blue;
-      }
-      a:hover{
-          color: green;
-      }
-      .titleSection {
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    body {
+      /* background:rgb(173, 216, 230,0.6); */
+      letter-spacing: 1px;
+      background: linear-gradient(315deg, #ffffff, rgb(173, 216, 230, 0.4));
 
+    }
+
+    a {
+      text-decoration: none;
+      color: blue;
+    }
+
+    a:hover {
+      color: green;
+    }
+
+    .titleSection {}
+
+    .descriptionSection {
+      /* border:1px solid red; */
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 5%;
+    }
+
+    .profilePic {
+      width: 250px;
+      /* height: 250px; */
+      border: 5px solid rgb(0, 0, 255, 0.6);
+      padding: 5px;
+      border-radius: 50%;
+      position: relative;
+      left: 5%;
+    }
+
+    .description {
+      width: 50vw;
+      text-align: center;
+      font-size: 15px;
+      /* border:1px solid blue; */
+    }
+
+    .main {
+      font-size: 100px;
+      text-align: center;
+      /* border:1px solid red; */
+      margin: auto;
+    }
+
+    .subMain {
+      font-size: 25px;
+      text-align: center;
+      /* border:1px solid red; */
+      margin: auto;
+    }
+
+    .techStackTitle {
+      font-size: 48px;
+      font-weight: bold;
+      color: gray;
+      text-align: center;
+      /* border:1px solid red; */
+      margin: 100px;
+    }
+
+    .techStackSection {
+      display: flex;
+      justify-content: space-around;
+      font-size: 18px;
+    }
+
+    .techStack {
+      /* border:1px solid red; */
+      width: max-content;
+    }
+
+    .techStack p {
+      text-align: center;
+    }
+
+    .projectSectionTitle {
+      font-size: 48px;
+      font-weight: bold;
+      color: gray;
+      text-align: center;
+      /* border:1px solid red; */
+      margin: 150px 0px 60px 0px;
+    }
+
+    .projectSection {
+      display: flex;
+      justify-content: space-around;
+      font-size: 18px;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+
+    .projectSection div {
+      /* border:1px solid red; */
+    }
+
+    .projectCard {
+      min-width: 300px;
+      min-height: 400px;
+      border: 1px solid gray;
+      border-radius: 15px;
+      text-align: center;
+      margin: 25px 25px 25px 25px;
+      border-radius: 11px;
+      box-shadow: -5px -5px 10px #d7d7d7, 5px 5px 10px #ffffff;
+      margin-bottom: 50px;
+      /* border:1px solid red; */
+    }
+
+    .projectCardTitle {
+      font-size: 25px;
+    }
+
+    .othersSection {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      /* border:1px solid green; */
+    }
+
+    .othersSection div {
+      /* border:1px solid red; */
+      max-height: 300px;
+      min-height: 300px;
+      margin: 50px;
+    }
+
+    .bottomDescription {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      width: 500px;
+      margin: auto;
+      width: 50vw;
+    }
+
+    @media only screen and (max-width: 600px) {
       .descriptionSection {
         /* border:1px solid red; */
         display: flex;
+        flex-direction: column;
         justify-content: space-around;
         align-items: center;
         padding: 5%;
       }
 
-      .profilePic {
-        width: 250px;
-        /* height: 250px; */
-        border:5px solid rgb(0, 0, 255,0.6);
-        padding: 5px;
-        border-radius: 50%;
-        position: relative;
-        left: 5%;
-      }
-
-      .description {
-        width: 50vw;
-        text-align: center;
-        font-size: 15px;
-        /* border:1px solid blue; */
-      }
-
       .main {
-        font-size: 100px;
-        text-align: center;
-        /* border:1px solid red; */
-        margin: auto;
-      }
-
-      .subMain {
         font-size: 25px;
         text-align: center;
         /* border:1px solid red; */
         margin: auto;
-      }
-
-      .techStackTitle {
-        font-size: 48px;
-        font-weight: bold;
-        color: gray;
-        text-align: center;
-        /* border:1px solid red; */
-        margin: 100px;
       }
 
       .techStackSection {
         display: flex;
         justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
         font-size: 18px;
       }
 
-      .techStack {
-        /* border:1px solid red; */
-        width: max-content;
-      }
-
-      .techStack p {
-        text-align: center;
-      }
-
-      .projectSectionTitle {
-        font-size: 48px;
-        font-weight: bold;
-        color: gray;
-        text-align: center;
-        /* border:1px solid red; */
-        margin: 150px 0px 60px 0px;
+      .techStackSection img {
+        width: 30vw;
       }
 
       .projectSection {
         display: flex;
         justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
         font-size: 18px;
+        /* border:1px solid red; */
+      }
+
+      .bottomDescription {
+        display: flex;
+        justify-content: space-around;
         flex-wrap: wrap;
-        width: 100%;
-      }
-
-      .projectSection div {
-        /* border:1px solid red; */
-      }
-
-      .projectCard {
-        min-width: 300px;
-        min-height: 400px;
-        border: 1px solid gray;
-        border-radius: 15px;
-        text-align: center;
-        margin: 25px 25px 25px 25px;
-        border-radius: 11px;
-        box-shadow: -5px -5px 10px #d7d7d7, 5px 5px 10px #ffffff;
-        margin-bottom: 50px;
-        /* border:1px solid red; */
-      }
-
-      .projectCardTitle {
-        font-size: 25px;
+        /* width:500px; */
+        margin: auto;
+        flex-direction: column;
+        /* border:1px solid green; */
       }
 
       .othersSection {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        /* border:1px solid green; */
+        flex-direction: column;
+
       }
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 
-      .othersSection div {
-        /* border:1px solid red; */
-        max-height: 300px;
-        min-height: 300px;
-        margin: 50px;
-      }
-      .bottomDescription{
-        display: flex;
-         justify-content: space-around;
-          flex-wrap: wrap;
-          width:500px;
-          margin: auto;
-          width: 50vw;
-      }
-
-      @media only screen and (max-width: 600px) {
-        .descriptionSection {
-          /* border:1px solid red; */
-          display: flex;
-          flex-direction: column;
-          justify-content: space-around;
-          align-items: center;
-          padding: 5%;
-        }
-
-        .main {
-          font-size: 25px;
-          text-align: center;
-          /* border:1px solid red; */
-          margin: auto;
-        }
-
-        .techStackSection {
-          display: flex;
-          justify-content: space-around;
-          flex-direction: column;
-          align-items: center;
-          font-size: 18px;
-        }
-
-        .techStackSection img {
-          width: 30vw;
-        }
-
-        .projectSection {
-          display: flex;
-          justify-content: space-around;
-          flex-direction: column;
-          align-items: center;
-          font-size: 18px;
-          /* border:1px solid red; */
-        }
-        .bottomDescription{
-        display: flex;
-         justify-content: space-around;
-          flex-wrap: wrap;
-          /* width:500px; */
-          margin: auto;
-          flex-direction: column;
-          /* border:1px solid green; */
-      }
-
-        .othersSection {
-          display: flex;
-          justify-content: space-around;
-          align-items: center;
-          flex-direction: column;
-        
-        }
-      }
-    </style>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
-
-  <body>
-    <div style="padding: 50px"></div>
-    <div class="descriptionSection">
-      <div>
-        <img
-          class="profilePic"
-          src="./resources/Sainihal Profilepic.jpg"
-          alt="Sai Nihal Profile Pic"
-        />
+<body>
+  <div style="padding: 50px"></div>
+  <div class="descriptionSection">
+    <div>
+      <img class="profilePic" src="./resources/Sainihal Profilepic.jpg" alt="Sai Nihal Profile Pic" />
+    </div>
+    <div class="description">
+      <span class="main">Hi, I'm Sai Nihal</span>
+      <br />
+      <span class="subMain">An Aspiring Full Stack Developer</span>
+      <div style="padding: 15px"></div>
+      <div style="text-align: left">
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only
+        five centuries, but also the leap into electronic typesetting,
+        remaining essentially unchanged.
       </div>
-      <div class="description">
-        <span class="main">Hi, I'm Sai Nihal</span>
-        <br />
-        <span class="subMain">An Aspiring Full Stack Developer</span>
-        <div style="padding: 15px"></div>
-        <div style="text-align: left">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged.
+      <div style="padding: 15px"></div>
+      <div style="display: flex; justify-content: space-around; flex-wrap: wrap">
+        <div>
+          <i class="fa fa-map-marker " style="font-size: 25px; color: #1287A5"></i><span
+            style="margin-left: 5px; padding-bottom: 5px; margin-top: -3px">Banglore,India</span>
         </div>
-        <div style="padding: 15px"></div>
-        <div
-          style="display: flex; justify-content: space-around; flex-wrap: wrap"
-        >
-          <div>
-            <i class="fa fa-map-marker " style="font-size: 25px; color: #1287A5"></i><span
-              style="margin-left: 5px; padding-bottom: 5px; margin-top: -3px"
-              >Banglore,India</span
-            >
-          </div>
-          <div>
-            <i class="fa fa-envelope" style=" font-size: 25px; color: #1287A5"></i><span
-              style="margin-left: 5px; padding-bottom: 5px; margin-top: -3px"
-              >sainihal13@gmail.com</span
-            >
-          </div>
-          <div>
-            <i class="fa fa-phone" style=" font-size: 25px;color: #1287A5"></i><span
-              style="margin-left: 5px; padding-bottom: 5px; margin-top: -3px"
-              >9030723541</span
-            >
-          </div>
+        <div>
+          <i class="fa fa-envelope" style=" font-size: 25px; color: #1287A5"></i><span
+            style="margin-left: 5px; padding-bottom: 5px; margin-top: -3px">sainihal13@gmail.com</span>
         </div>
-        <div style="padding: 15px"></div>
-        <div
-          class="bottomDescription">
-          <div>
-            <i class="fa fa-linkedin" style=" font-size: 25px;color: #1287A5"></i>
-            <span
-              style="margin-left: 5px; padding-bottom: 5px; margin-top: -3px"
-              ></span
-            >
-          </div>
-          <div>
-            <i class="fa fa-github" style=" font-size: 25px;color: #1287A5"></i>
-            <span
-              style="margin-left: 5px; padding-bottom: 5px; margin-top: -3px"
-              ></span
-            >
-          </div>
-          <div>
-            <i class="fa fa-file-pdf-o" style=" font-size: 25px;color: #1287A5"></i><span
-              style="margin-left: 5px; padding-bottom: 5px; margin-top: -3px"
-              >Resume</span
-            >
-          </div>
+        <div>
+          <i class="fa fa-phone" style=" font-size: 25px;color: #1287A5"></i><span
+            style="margin-left: 5px; padding-bottom: 5px; margin-top: -3px">9030723541</span>
         </div>
+      </div>
+      <div style="padding: 15px"></div>
+      <div class="bottomDescription">
+        <div>
+          <i class="fa fa-linkedin" style=" font-size: 25px;color: #1287A5"></i>
+          <span style="margin-left: 5px; padding-bottom: 5px; margin-top: -3px"></span>
+        </div>
+        <div>
+          <i class="fa fa-github" style=" font-size: 25px;color: #1287A5"></i>
+          <span style="margin-left: 5px; padding-bottom: 5px; margin-top: -3px"></span>
+        </div>
+        <div>
+          <i class="fa fa-file-pdf-o" style=" font-size: 25px;color: #1287A5"></i><span
+            style="margin-left: 5px; padding-bottom: 5px; margin-top: -3px">Resume</span>
+        </div>
+      </div>
 
+      <br />
+    </div>
+  </div>
+  <div style="padding: 15px"></div>
+  <div>
+    <div class="techStackTitle">Tech Stacks</div>
+    <div class="techStackSection">
+      <div class="techStack">
+        <img src="./resources/html.png" alt="javascriptLogo" />
         <br />
+        <p>HTML</p>
+      </div>
+      <div class="techStack">
+        <img src="./resources/css.png" alt="javascriptLogo" />
+        <br />
+        <p>CSS</p>
+      </div>
+      <div class="techStack">
+        <img src="./resources/javascript.png" alt="javascriptLogo" />
+        <br />
+        <p>JAVASCRIPT</p>
+      </div>
+      <div class="techStack">
+        <img src="./resources/bootstrap.png" alt="javascriptLogo" />
+        <br />
+        <p>BOOTTSTRAP</p>
+      </div>
+      <div class="techStack">
+        <img src="./resources/react.png" alt="javascriptLogo" />
+        <br />
+        <p>REACT</p>
       </div>
     </div>
-    <div style="padding: 15px"></div>
-    <div>
-      <div class="techStackTitle">Tech Stacks</div>
-      <div class="techStackSection">
-        <div class="techStack">
-          <img src="./resources/html.png" alt="javascriptLogo" />
-          <br />
-          <p>HTML</p>
-        </div>
-        <div class="techStack">
-          <img src="./resources/css.png" alt="javascriptLogo" />
-          <br />
-          <p>CSS</p>
-        </div>
-        <div class="techStack">
-          <img src="./resources/javascript.png" alt="javascriptLogo" />
-          <br />
-          <p>JAVASCRIPT</p>
-        </div>
-        <div class="techStack">
-          <img src="./resources/bootstrap.png" alt="javascriptLogo" />
-          <br />
-          <p>BOOTTSTRAP</p>
-        </div>
-        <div class="techStack">
-          <img src="./resources/react.png" alt="javascriptLogo" />
-          <br />
-          <p>REACT</p>
-        </div>
-      </div>
-    </div>
+  </div>
 
-    <div>
-      <div class="projectSectionTitle">Projects</div>
-      <div class="projectSection">
-        <div class="projectCard">
-            <br />
-          <div class="projectCardTitle"><span style="padding:15px;font-size: 25px;border: beige;">Pexels</span></div>
-          <br />
-          <div>
-            <img src="https://via.placeholder.com/250" />
-          </div>
-          <br />
-          <div>An Image Searching App</div>
-          <br />
-          <div style="display: flex;justify-content: space-around;width: 250px;margin: auto;" ><a href="" > Live</a>
-            <a href="">Demo </a>
+  <div>
+    <div class="projectSectionTitle">Projects</div>
+    <div class="projectSection">
+      <div class="projectCard">
+        <br />
+        <div class="projectCardTitle"><span style="padding:15px;font-size: 25px;border: beige;">Pexels</span></div>
+        <br />
+        <div>
+          <img src="https://via.placeholder.com/250" />
+        </div>
+        <br />
+        <div>An Image Searching App</div>
+        <br />
+        <div style="display: flex;justify-content: space-around;width: 250px;margin: auto;"><a href=""> Live</a>
+          <a href="">Demo </a>
         </div>
         <div style="align-content: center;height: 50px;margin-top: 15px;">
-            <img src="./resources/react.png" width=30px style="margin:0px 0px -12px 0px"/>
-            <img src="./resources/html.png" width=30px style="margin:0px 0px -12px 0px"/>
-            <img src="./resources/javascript.png" width=30px style="margin:0px 0px -12px 0px" />
+          <img src="./resources/react.png" width=30px style="margin:0px 0px -12px 0px" />
+          <img src="./resources/html.png" width=30px style="margin:0px 0px -12px 0px" />
+          <img src="./resources/javascript.png" width=30px style="margin:0px 0px -12px 0px" />
         </div>
-       
+
+      </div>
+      <div class="projectCard">
+        <br />
+        <div class="projectCardTitle"><span style="padding:15px;font-size: 25px;border: beige;">Pexels</span></div>
+        <br />
+        <div>
+          <img src="https://via.placeholder.com/250" />
         </div>
-        <div class="projectCard">
-            <br />
-          <div class="projectCardTitle"><span style="padding:15px;font-size: 25px;border: beige;">Pexels</span></div>
-          <br />
-          <div>
-            <img src="https://via.placeholder.com/250" />
-          </div>
-          <br />
-          <div>An Image Searching App</div>
-          <br />
-          <div style="display: flex;justify-content: space-around;width: 250px;margin: auto;" ><a href="" > Live</a>
-            <a href="">Demo </a>
-        </div>
-        <div style="align-content: center;height: 50px;margin-top: 15px;">
-            <img src="./resources/react.png" width=30px style="margin:0px 0px -12px 0px"/>
-            <img src="./resources/html.png" width=30px style="margin:0px 0px -12px 0px"/>
-            <img src="./resources/javascript.png" width=30px style="margin:0px 0px -12px 0px" />
-        </div>
-       
-        </div>
-        <div class="projectCard">
-            <br />
-          <div class="projectCardTitle"><span style="padding:15px;font-size: 25px;border: beige;">Pexels</span></div>
-          <br />
-          <div>
-            <img src="https://via.placeholder.com/250" />
-          </div>
-          <br />
-          <div>An Image Searching App</div>
-          <br />
-          <div style="display: flex;justify-content: space-around;width: 250px;margin: auto;" ><a href="" > Live</a>
-            <a href="">Demo </a>
+        <br />
+        <div>An Image Searching App</div>
+        <br />
+        <div style="display: flex;justify-content: space-around;width: 250px;margin: auto;"><a href=""> Live</a>
+          <a href="">Demo </a>
         </div>
         <div style="align-content: center;height: 50px;margin-top: 15px;">
-            <img src="./resources/react.png" width=30px style="margin:0px 0px -12px 0px"/>
-            <img src="./resources/html.png" width=30px style="margin:0px 0px -12px 0px"/>
-            <img src="./resources/javascript.png" width=30px style="margin:0px 0px -12px 0px" />
+          <img src="./resources/react.png" width=30px style="margin:0px 0px -12px 0px" />
+          <img src="./resources/html.png" width=30px style="margin:0px 0px -12px 0px" />
+          <img src="./resources/javascript.png" width=30px style="margin:0px 0px -12px 0px" />
         </div>
-       
+
+      </div>
+      <div class="projectCard">
+        <br />
+        <div class="projectCardTitle"><span style="padding:15px;font-size: 25px;border: beige;">Pexels</span></div>
+        <br />
+        <div>
+          <img src="https://via.placeholder.com/250" />
         </div>
-        <!-- <div class="projectCard">
+        <br />
+        <div>An Image Searching App</div>
+        <br />
+        <div style="display: flex;justify-content: space-around;width: 250px;margin: auto;"><a href=""> Live</a>
+          <a href="">Demo </a>
+        </div>
+        <div style="align-content: center;height: 50px;margin-top: 15px;">
+          <img src="./resources/react.png" width=30px style="margin:0px 0px -12px 0px" />
+          <img src="./resources/html.png" width=30px style="margin:0px 0px -12px 0px" />
+          <img src="./resources/javascript.png" width=30px style="margin:0px 0px -12px 0px" />
+        </div>
+
+      </div>
+      <!-- <div class="projectCard">
           <div class="projectCardTitle">Project Name</div>
           <br />
           <div>
@@ -385,60 +369,50 @@
           <br />
           <div>Video Demo</div>
         </div> -->
-        <div class="projectCard">
-            <br />
-          <div class="projectCardTitle"><span style="padding:15px;font-size: 25px;border: beige;">Pexels</span></div>
-          <br />
-          <div>
-            <img src="https://via.placeholder.com/250" />
-          </div>
-          <br />
-          <div>An Image Searching App</div>
-          <br />
-          <div style="display: flex;justify-content: space-around;width: 250px;margin: auto;" ><a href="" > Live</a>
-            <a href="">Demo </a>
+      <div class="projectCard">
+        <br />
+        <div class="projectCardTitle"><span style="padding:15px;font-size: 25px;border: beige;">Pexels</span></div>
+        <br />
+        <div>
+          <img src="https://via.placeholder.com/250" />
+        </div>
+        <br />
+        <div>An Image Searching App</div>
+        <br />
+        <div style="display: flex;justify-content: space-around;width: 250px;margin: auto;"><a href=""> Live</a>
+          <a href="">Demo </a>
         </div>
         <div style="align-content: center;height: 50px;margin-top: 15px;">
-            <img src="./resources/react.png" width=30px style="margin:0px 0px -12px 0px"/>
-            <img src="./resources/html.png" width=30px style="margin:0px 0px -12px 0px"/>
-            <img src="./resources/javascript.png" width=30px style="margin:0px 0px -12px 0px" />
+          <img src="./resources/react.png" width=30px style="margin:0px 0px -12px 0px" />
+          <img src="./resources/html.png" width=30px style="margin:0px 0px -12px 0px" />
+          <img src="./resources/javascript.png" width=30px style="margin:0px 0px -12px 0px" />
         </div>
-       
-        </div>
+
       </div>
     </div>
-    <div style="padding: 15px"></div>
-    <div>
-      <div class="othersSection">
-        <div style="max-width: 250px; max-height: 250px">
-          <img src="https://img.icons8.com/cotton/2x/laptop-coding.png" />
-          <br />
-          <span style="text-align: center; font-size: 25px"
-            >1000 Hours of Coding</span
-          >
-        </div>
-        <div style="max-width: 250px; max-height: 250px; text-align: center">
-          <img
-            src="https://user-images.githubusercontent.com/17762967/42728663-26ebdb04-87dd-11e8-928f-fb01479a2ce1.png"
-            style="max-width: 250px; max-height: 250px"
-          />
-          <br />
-          <span style="text-align: center; font-size: 25px"
-            >300 HackerRank Problems</span
-          >
-        </div>
-        <div style="max-width: 250px; max-height: 250px; text-align: center">
-          <br />
-          <img
-            src="./resources/softskills.jpg"
-            style="max-width: 250px; max-height: 250px"
-          />
-          <br />
-          <span style="text-align: center; font-size: 25px"
-            >100 Hours of SoftSkills</span
-          >
-        </div>
+  </div>
+  <div style="padding: 15px"></div>
+  <div>
+    <div class="othersSection">
+      <div style="max-width: 250px; max-height: 250px">
+        <img src="https://img.icons8.com/cotton/2x/laptop-coding.png" />
+        <br />
+        <span style="text-align: center; font-size: 25px">1000 Hours of Coding</span>
+      </div>
+      <div style="max-width: 250px; max-height: 250px; text-align: center">
+        <img src="https://user-images.githubusercontent.com/17762967/42728663-26ebdb04-87dd-11e8-928f-fb01479a2ce1.png"
+          style="max-width: 250px; max-height: 250px" />
+        <br />
+        <span style="text-align: center; font-size: 25px">300 HackerRank Problems</span>
+      </div>
+      <div style="max-width: 250px; max-height: 250px; text-align: center">
+        <br />
+        <img src="./resources/softskills.jpg" style="max-width: 250px; max-height: 250px" />
+        <br />
+        <span style="text-align: center; font-size: 25px">100 Hours of SoftSkills</span>
       </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
