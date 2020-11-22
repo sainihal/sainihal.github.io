@@ -4,24 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="icon"
+      href="./resources/portfolio_icon.png"
+      type="image/icon type"
+    />
     <style>
       body {
         /* background:rgb(173, 216, 230,0.6); */
         letter-spacing: 1px;
         background: linear-gradient(315deg, #ffffff, rgb(173, 216, 230, 0.4));
       }
-     
-
       a {
         text-decoration: none;
         /* color: blue; */
         /* background-color: red; */
       }
-      .projectSection a{
-        background-color:rgb(18, 135, 165,0.5)!important;
+      .projectSection a {
+        background-color: rgb(18, 135, 165, 0.5) !important;
       }
-      .projectSection a:hover{
-        background-color:rgb(18, 135, 165)!important;
+      .projectSection a:hover {
+        background-color: rgb(18, 135, 165) !important;
       }
       .detailsSectionMain {
         max-width: 60%;
@@ -103,6 +106,8 @@
       }
 
       .techStackSection {
+        margin: auto;
+        width:75%;
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
@@ -111,8 +116,9 @@
 
       .techStack {
         /* border:1px solid red; */
-        max-width: 150px;
+        min-width: 200px;
         margin: 1rem;
+        text-align: center;
       }
 
       .techStack p {
@@ -163,7 +169,7 @@
         /* border:1px solid red; */
       }
       .projectCard:hover {
-        transform: scale(1.10);
+        transform: scale(1.1);
         /* transition: all 0.3s ease-out; */
       }
       /* .projectCard:hover{
@@ -206,8 +212,8 @@
       }
       * {
         font-family: "Roboto", sans-serif;
-        color: rgb(68, 65, 65)
-        /* color:gray; */ 
+        color: rgb(68, 65, 65);
+        /* color:gray; */
       }
       @media screen and (max-width: 420px) {
         .projectCard {
@@ -231,7 +237,7 @@
           border-radius: 180px;
           position: relative;
           /* left: 1rem; */
-          margin:auto;
+          margin: auto;
           margin-top: -50px;
           margin-bottom: 3rem;
           /* position: relative; */
@@ -247,19 +253,19 @@
           margin: 3rem;
         }
         .detailsSection {
-        /* margin-left: 5px;
+          /* margin-left: 5px;
         padding-bottom: 5px;
         margin-top: -3px */
-        /* margin:auto; */
-        /* margin:100px; */
-        margin: 1rem;
-        display: flex;
-        flex-direction: column;
-        /* border: 1px solid red; */
-      }
-      .main{
-        font-size: 50px;
-      }
+          /* margin:auto; */
+          /* margin:100px; */
+          margin: 1rem;
+          display: flex;
+          flex-direction: column;
+          /* border: 1px solid red; */
+        }
+        .main {
+          font-size: 50px;
+        }
       }
     </style>
     <link
@@ -358,13 +364,16 @@
             ></span>
           </div>
           <div>
-            <a href="https://drive.google.com/file/d/1OkYVoYyZPM47PC5mePwLoKcFBs9CkoRj/view?usp=sharing" target="_blank">
-            <i
-              class="fa fa-file-pdf-o"
-              style="font-size: 40px; color: #1287a5"
-            ></i
+            <a
+              href="https://drive.google.com/file/d/1OkYVoYyZPM47PC5mePwLoKcFBs9CkoRj/view?usp=sharing"
+              target="_blank"
+            >
+              <i
+                class="fa fa-file-pdf-o"
+                style="font-size: 40px; color: #1287a5"
+              ></i
             ></a>
-          <span
+            <span
               style="margin-left: 5px; padding-bottom: 5px; margin-top: -3px"
               >Resume</span
             >
@@ -376,14 +385,17 @@
     </div>
     <div style="padding: 15px"></div>
     <div>
-      <div class="techStackTitle" data-aos="fade-right"
-      data-aos-offset="-100"
-      data-aos-delay="5"
-      data-aos-duration="500"
-      data-aos-easing="ease-in-out"
-      data-aos-mirror="true"
-      data-aos-once="false"
-      data-aos-anchor-placement="top-center">
+      <div
+        class="techStackTitle"
+        data-aos="fade-right"
+        data-aos-offset="-100"
+        data-aos-delay="5"
+        data-aos-duration="500"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center"
+      >
         <span>Tech Stacks</span>
         <div
           style="
@@ -414,7 +426,7 @@
           data-aos-once="false"
           data-aos-anchor-placement="top-center"
         >
-          <img class="logo" src="./resources/html.png" alt="javascriptLogo" />
+          <img class="logo" src="./resources/html.png" alt="javascriptLogo"  style="width:125px"/>
           <br />
           <p>HTML</p>
         </div>
@@ -429,7 +441,7 @@
           data-aos-once="false"
           data-aos-anchor-placement="top-center"
         >
-          <img class="logo" src="./resources/css.png" alt="javascriptLogo" />
+          <img class="logo" src="./resources/css.png" alt="css_Logo"  style="width:125px"/>
           <br />
           <p>CSS</p>
         </div>
@@ -448,6 +460,7 @@
             class="logo"
             src="./resources/javascript.png"
             alt="javascriptLogo"
+            style="width:125px"
           />
           <br />
           <p>JAVASCRIPT</p>
@@ -467,6 +480,7 @@
             class="logo"
             src="./resources/bootstrap.png"
             alt="javascriptLogo"
+            style="width:125px"
           />
           <br />
           <p>BOOTSTRAP</p>
@@ -482,22 +496,86 @@
           data-aos-once="false"
           data-aos-anchor-placement="top-center"
         >
-          <img class="logo" src="./resources/react.png" alt="javascriptLogo" />
+          <img class="logo" src="./resources/react.png" alt="javascriptLogo" style="width:125px" />
           <br />
           <p>REACT</p>
         </div>
+        <div
+          class="techStack"
+          data-aos="zoom-in"
+          data-aos-offset="-100"
+          data-aos-delay="5"
+          data-aos-duration="800"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-center"
+        >
+          <img
+            class="logo"
+            src="https://i1.wp.com/cdn-images-1.medium.com/max/1600/1*Vo5RDpNkOsfDn8sx06mthA.png?ssl=1"
+            alt="redux_logo"
+            style="width:125px"
+          />
+          <br />
+          <p>Redux</p>
+        </div>
+        <div
+          class="techStack"
+          data-aos="zoom-in"
+          data-aos-offset="-100"
+          data-aos-delay="5"
+          data-aos-duration="800"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-center"
+        >
+          <img
+            class="logo"
+            src="https://cdn.iconscout.com/icon/free/png-256/node-js-1174925.png"
+            alt="nodejs_logo"
+            style="width:125px"
+          />
+          <br />
+          <p>Node JS</p>
+        </div>
+
+      <div
+      class="techStack"
+      data-aos="zoom-in"
+      data-aos-offset="-100"
+      data-aos-delay="5"
+      data-aos-duration="800"
+      data-aos-easing="ease-in-out"
+      data-aos-mirror="true"
+      data-aos-once="false"
+      data-aos-anchor-placement="top-center"
+    >
+      <img
+        class="logo"
+        src="https://cdn.svgporn.com/logos/git-icon.svg"
+        alt="nodejs_logo"
+        style="width:125px"
+      />
+      <br />
+      <p>Git</p>
+    </div>
       </div>
     </div>
 
     <div>
-      <div class="projectSectionTitle" data-aos="fade-left"
-      data-aos-offset="-100"
-      data-aos-delay="5"
-      data-aos-duration="500"
-      data-aos-easing="ease-in-out"
-      data-aos-mirror="true"
-      data-aos-once="false"
-      data-aos-anchor-placement="top-center">
+      <div
+        class="projectSectionTitle"
+        data-aos="fade-left"
+        data-aos-offset="-100"
+        data-aos-delay="5"
+        data-aos-duration="500"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-anchor-placement="top-center"
+      >
         Projects
         <div
           style="
@@ -531,12 +609,89 @@
           <br />
           <div class="projectCardTitle">
             <span style="padding: 15px; font-size: 25px; border: beige"
+              >Flawless</span
+            >
+          </div>
+          <br />
+          <div>
+            <img src="./resources/Seamless.png" height="250px" width="300px" />
+          </div>
+          <br />
+          <div>Clone of website seamless.com</div>
+          <br />
+          <div
+            style="
+              display: flex;
+              justify-content: space-around;
+              width: 250px;
+              margin: auto;
+            "
+          >
+            <a
+              style="
+                background-color: #1287a5;
+                padding: 1rem;
+                border-radius: 0.5rem;
+                border: 0px;
+                color: white;
+              "
+              href="https://github.com/riteshranjan1997/Ivory-Apache-Projects/tree/Project-Update"
+              target="_blank"
+            >
+              <i
+                class="fa fa-github"
+                style="font-size: 25px; color: black; margin-right: 5px"
+              ></i
+              >Github</a
+            >
+            <a
+              style="
+                background-color: #1287a5;
+                padding: 1rem;
+                border-radius: 0.5rem;
+                border: 0px;
+                color: white;
+              "
+              href="http://ec2-13-127-156-161.ap-south-1.compute.amazonaws.com/"
+              target="_blank"
+              padding="15px"
+            >
+              <i
+                class="fa fa-external-link"
+                aria-hidden="true"
+                style="font-size: 25px; color: black; margin-right: 5px"
+              ></i>
+
+              Demo</a
+            >
+          </div>
+          <div style="align-content: center; height: 50px; margin-top: 15px">
+            <img src="./resources/react.png" width="40px" />
+            <img src="./resources/html.png" width="40px" />
+            <img src="./resources/javascript.png" width="40px" />
+            <img src="./resources/nodejs.png" width="40px" />
+          </div>
+        </div>
+        <div
+          class="projectCard"
+          data-aos="zoom-in"
+          data-aos-offset="-100"
+          data-aos-delay="5"
+          data-aos-duration="800"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-anchor-placement="top-center"
+        >
+          <br />
+          <div class="projectCardTitle">
+            <span style="padding: 15px; font-size: 25px; border: beige"
               >Pexels</span
             >
           </div>
           <br />
           <div>
-            <img src="./resources/pexels.png" height="250px" width="300px"/>
+            <img src="./resources/pexels.png" height="250px" width="300px" />
           </div>
           <br />
           <div>An Image Searching App</div>
@@ -593,6 +748,7 @@
             <img src="./resources/javascript.png" width="40px" />
           </div>
         </div>
+
         <div
           class="projectCard"
           data-aos="zoom-in"
@@ -844,6 +1000,7 @@
         </div>
       </div>
     </div>
+
     <div style="padding: 15px"></div>
     <div>
       <div class="othersSection">
